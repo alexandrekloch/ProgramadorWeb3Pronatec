@@ -8,11 +8,11 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{66F19B38-94C4-4F99-A7D6-B81EE5EF088D}</ProjectGuid>
+    <ProjectGuid>{5377AE63-08B9-4395-8439-1F06AC160008}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MeuPrimeiroSiteEmASP_NET</RootNamespace>
-    <AssemblyName>MeuPrimeiroSiteEmASP_NET</AssemblyName>
+    <RootNamespace>DojoTabuada</RootNamespace>
+    <AssemblyName>DojoTabuada</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
@@ -27,7 +27,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>MeuPrimeiroSiteEmASP_NET.xml</DocumentationFile>
+    <DocumentationFile>DojoTabuada.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -36,7 +36,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>MeuPrimeiroSiteEmASP_NET.xml</DocumentationFile>
+    <DocumentationFile>DojoTabuada.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -81,40 +81,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CondicionalSe.aspx" />
-    <Content Include="ExercicioCondicionaisSe.aspx" />
-    <Content Include="LacosDeRepeticao.aspx" />
-    <Content Include="OperadoresAritmeticos.aspx" />
-    <Content Include="OperadoresLogicos.aspx" />
-    <Content Include="OperadoresRelacionais.aspx" />
-    <Content Include="Variaveis.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CondicionalSe.aspx.designer.vb">
-      <DependentUpon>CondicionalSe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CondicionalSe.aspx.vb">
-      <DependentUpon>CondicionalSe.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="ExercicioCondicionaisSe.aspx.designer.vb">
-      <DependentUpon>ExercicioCondicionaisSe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExercicioCondicionaisSe.aspx.vb">
-      <DependentUpon>ExercicioCondicionaisSe.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="LacosDeRepeticao.aspx.designer.vb">
-      <DependentUpon>LacosDeRepeticao.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LacosDeRepeticao.aspx.vb">
-      <DependentUpon>LacosDeRepeticao.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -134,53 +104,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="OperadoresAritmeticos.aspx.designer.vb">
-      <DependentUpon>OperadoresAritmeticos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OperadoresAritmeticos.aspx.vb">
-      <DependentUpon>OperadoresAritmeticos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="OperadoresLogicos.aspx.designer.vb">
-      <DependentUpon>OperadoresLogicos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OperadoresLogicos.aspx.vb">
-      <DependentUpon>OperadoresLogicos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="OperadoresRelacionais.aspx.designer.vb">
-      <DependentUpon>OperadoresRelacionais.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OperadoresRelacionais.aspx.vb">
-      <DependentUpon>OperadoresRelacionais.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Variaveis.aspx.designer.vb">
-      <DependentUpon>Variaveis.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Variaveis.aspx.vb">
-      <DependentUpon>Variaveis.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="WebForm1.aspx.designer.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.vb">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.vb">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.vb">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.vb">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -236,7 +164,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53663/</IISUrl>
+          <IISUrl>http://localhost:58563/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
