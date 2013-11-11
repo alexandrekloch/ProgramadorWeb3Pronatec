@@ -81,14 +81,28 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Arquivos\CBX 1000.jpg" />
+    <Content Include="Arquivos\Jogo passa formas.jpg" />
+    <Content Include="Arquivos\macarronada.png" />
+    <Content Include="Arquivos\raviolli.png" />
+    <Content Include="Arquivos\WindowsPhone Day.jpg" />
+    <Content Include="Contato.aspx" />
     <Content Include="ControleDropDownList.aspx" />
     <Content Include="CotroleTextBox.aspx" />
     <Content Include="Download.aspx" />
+    <Content Include="EnviarEmail.aspx" />
     <Content Include="Upload.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contato.aspx.designer.vb">
+      <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contato.aspx.vb">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ControleDropDownList.aspx.designer.vb">
       <DependentUpon>ControleDropDownList.aspx</DependentUpon>
     </Compile>
@@ -108,6 +122,13 @@
     </Compile>
     <Compile Include="Download.aspx.vb">
       <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EnviarEmail.aspx.designer.vb">
+      <DependentUpon>EnviarEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnviarEmail.aspx.vb">
+      <DependentUpon>EnviarEmail.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -169,9 +190,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Arquivos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

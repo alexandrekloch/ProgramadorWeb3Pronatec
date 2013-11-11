@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Download
+Partial Public Class Contato
 
     '''<summary>
     '''Controle form1.
@@ -23,38 +23,47 @@ Partial Public Class Download
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Controle lsbArquivosDiretorio.
+    '''Controle txtNome.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
-    Protected WithEvents lsbArquivosDiretorio As Global.System.Web.UI.WebControls.ListBox
+    Protected WithEvents txtNome As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle btnAtualizar.
+    '''Controle txtEmail.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
-    Protected WithEvents btnAtualizar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle btnDownload.
+    '''Controle txtTelefone.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
-    Protected WithEvents btnDownload As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtTelefone As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle imgDownload.
+    '''Controle txtMensagem.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
-    Protected WithEvents imgDownload As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents txtMensagem As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle btnEnviar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents btnEnviar As Global.System.Web.UI.WebControls.Button
 End Class

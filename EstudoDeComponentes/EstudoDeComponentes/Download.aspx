@@ -9,9 +9,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ListBox ID="lsbArquivosDiretorio" runat="server" Height="139px" Width="204px"></asp:ListBox>
+        <asp:ListBox ID="lsbArquivosDiretorio" runat="server" Height="139px" Width="204px" AutoPostBack="True"></asp:ListBox>
         <asp:Button ID="btnAtualizar" runat="server" Text="Atualizar" />
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Button ID="btnDownload" runat="server" Text="Download" />
+        <br />
+
+        <br />
+        <asp:Image ID="imgDownload" runat="server" />
     </div>
     </form>
 </body>
