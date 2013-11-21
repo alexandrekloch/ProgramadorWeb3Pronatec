@@ -1,0 +1,49 @@
+
+  <connectionStrings>
+    <add name="DefaultConnection" providerName="System.Data.SqlClient" connectionString="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-memberteste-20131121000527;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-memberteste-20131121000527.mdf" />
+    <add name="ApplicationServices" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  
+ 
+    
+    <authorization>
+      <deny users="?" />
+    </authorization>
+   
+
+    
+    <authentication mode="Forms">
+      <forms loginUrl="~/Account/Login.aspx" timeout="2880" />
+    </authentication>
+
+    
+    <profile defaultProvider="DefaultProfileProvider">
+      <providers>
+        <clear/>
+        <add name="AspNetSqlProfileProvider" type="System.Web.Profile.SqlProfileProvider" connectionStringName="ApplicationServices" applicationName="/"/>
+      </providers>
+    </profile>
+
+    
+    <membership>
+      <providers>
+        <clear/>
+        <add name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider" connectionStringName="ApplicationServices"
+             enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="false" requiresUniqueEmail="false"
+             maxInvalidPasswordAttempts="5" minRequiredPasswordLength="6" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10"
+             applicationName="/" />
+      </providers>
+    </membership>
+    
+    <roleManager enabled="true">
+      <providers>
+        <clear />
+        <add connectionStringName="ApplicationServices" applicationName="/"
+          name="AspNetSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" />
+        <add applicationName="/" name="AspNetWindowsTokenRoleProvider"
+          type="System.Web.Security.WindowsTokenRoleProvider" />
+      </providers>
+    </roleManager>
+    
+
+    
